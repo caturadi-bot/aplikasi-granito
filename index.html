@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RB SHERA — Abnormality Management</title>
+
+<style>
+body{
+  margin:0;
+  padding:20px;
+  font-family:Arial, sans-serif;
+  background:#f3e8ff;
+}
+
+.card{
+  max-width:460px;
+  margin:0 auto;
+  background:#fff;
+  padding:24px;
+  border-radius:16px;
+  text-align:center;
+}
+
+.logo{
+  width:180px;
+  margin-bottom:16px;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  margin-bottom:12px;
+  font-size:16px;
+  font-weight:bold;
+  border:none;
+  border-radius:10px;
+  color:#fff;
+}
+
+.create{background:#1F2933}
+.close{background:#6B7280}
+.dashboard{background:#E53935}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <img class="logo"
+    src="https://raw.githubusercontent.com/caturadi-bot/Granito_logo/main/logo%20granito.jpeg">
+
+  <h2>Abnormality Management</h2>
+  <p>POLISH & SORTIR</p>
+
+  <button class="create"
+    onclick="openLink('https://docs.google.com/forms/d/e/1FAIpQLSdbm9pd9_rCP_u4E84QBQSaagYwFH4OspjQj-8vGZed7ui1uA/viewform')">
+    Create Abnormality
+  </button>
+
+  <button class="close"
+    onclick="openLink('https://docs.google.com/forms/d/e/1FAIpQLSfVmpO0zBp7o8Gc-3csB1j_owkhY-4x7iuQOOBlRHxvMLAGDw/viewform')">
+    Closing Abnormality
+  </button>
+
+  <button class="dashboard"
+    onclick="openLink('https://drive.google.com/file/d/1TOBJIel2jwC8xzepHlXfH4HICm7-GH7H/view?usp=sharing')">
+    Dashboard
+  </button>
+</div>
+
+<script>
+function openLink(url){
+  window.open(url,'_blank');
+}
+</script>
+
+</body>
+</html>
