@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RB SHERA — Abnormality Management</title>
+
 <style>
 body{
   margin:0;
@@ -10,7 +17,7 @@ body{
   max-width:460px;
   margin:0 auto;
   background:#fff;
-  padding:24px;
+  padding:24px 24px 48px;
   border-radius:16px;
   text-align:center;
   position:relative;
@@ -21,7 +28,7 @@ body{
   margin-bottom:16px;
 }
 
-/* ===== BUTTON INTERACTION ===== */
+/* ===== BUTTON ===== */
 button{
   width:100%;
   padding:14px;
@@ -33,30 +40,24 @@ button{
   color:#fff;
   cursor:pointer;
 
-  /* animasi */
-  transition:
-    background-color 0.15s ease,
-    transform 0.1s ease,
-    box-shadow 0.1s ease;
-
+  transition:all 0.15s ease;
   box-shadow:0 6px 14px rgba(0,0,0,0.18);
 }
 
-/* warna dasar */
 .create{background:#1F2933}
 .close{background:#6B7280}
 .dashboard{background:#E53935}
 
-/* saat disentuh */
+/* respon sentuh */
 button:hover{
-  filter:brightness(1.1);
+  filter:brightness(1.08);
 }
 
-/* saat ditekan */
+/* respon tekan */
 button:active{
   transform:scale(0.97);
-  box-shadow:0 3px 8px rgba(0,0,0,0.25);
   filter:brightness(0.9);
+  box-shadow:0 3px 8px rgba(0,0,0,0.25);
 }
 
 /* footer */
@@ -69,3 +70,43 @@ button:active{
   opacity:0.7;
 }
 </style>
+</head>
+
+<body>
+
+<div class="card">
+  <img class="logo"
+    src="https://raw.githubusercontent.com/caturadi-bot/Granito_logo/main/logo%20granito.jpeg">
+
+  <h2>Abnormality Management</h2>
+  <p>POLISH & SORTIR</p>
+
+  <button class="create"
+    onclick="openLink('https://docs.google.com/forms/d/e/1FAIpQLSdbm9pd9_rCP_u4E84QBQSaagYwFH4OspjQj-8vGZed7ui1uA/viewform')">
+    Create Abnormality
+  </button>
+
+  <button class="close"
+    onclick="openLink('https://docs.google.com/forms/d/e/1FAIpQLSfVmpO0zBp7o8Gc-3csB1j_owkhY-4x7iuQOOBlRHxvMLAGDw/viewform')">
+    Closing Abnormality
+  </button>
+
+  <button class="dashboard"
+    onclick="openLink('https://drive.google.com/file/d/1TOBJIel2jwC8xzepHlXfH4HICm7-GH7H/view?usp=sharing')">
+    Dashboard
+  </button>
+
+  <div class="footer-credit">
+    Created by Operation Excellence
+  </div>
+</div>
+
+<script>
+function openLink(url){
+  // PALING AMAN UNTUK WEBVIEW
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>
