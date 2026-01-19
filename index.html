@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- WAJIB UNTUK APPS SCRIPT -->
+<base target="_top">
+
 <title>RB SHERA — Abnormality Management</title>
 
 <style>
@@ -28,7 +32,6 @@ body{
   margin-bottom:16px;
 }
 
-/* ===== BUTTON ===== */
 button{
   width:100%;
   padding:14px;
@@ -48,19 +51,16 @@ button{
 .close{background:#6B7280}
 .dashboard{background:#E53935}
 
-/* respon sentuh */
 button:hover{
   filter:brightness(1.08);
 }
 
-/* respon tekan */
 button:active{
   transform:scale(0.97);
   filter:brightness(0.9);
   box-shadow:0 3px 8px rgba(0,0,0,0.25);
 }
 
-/* footer */
 .footer-credit{
   position:absolute;
   bottom:12px;
@@ -103,7 +103,6 @@ button:active{
 
 <script>
 function openLink(url){
-  // PALING AMAN UNTUK WEBVIEW
   window.location.href = url;
 }
 </script>
